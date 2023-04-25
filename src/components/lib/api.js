@@ -10,15 +10,9 @@ const ENDPOINTS = {
   forecastWeather: (id) =>
     `${BASE_URL}/forecast.json?key=${process.env.REACT_APP_VALUE}&q=${id}`,
   historyWeather: (id, date) =>
-    `${BASE_URL}/history.json?key=${process.env.REACT_APP_VALUE}&q=${id}&dt=${date}`
+    `${BASE_URL}/history.json?key=${process.env.REACT_APP_VALUE}&q=${id}&dt=${date}`,
 };
 
+const GET = (endpoint) => axios.get(endpoint);
 
-const GET = (endpoint) =>
-  axios.get(
-    endpoint
-  );
-
-
-  
-  export const API = { GET, ENDPOINTS };
+export const API = { GET, ENDPOINTS };
