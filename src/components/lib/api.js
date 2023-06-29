@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const BASE_URL = 'http://api.weatherapi.com/v1'; //insert the api link here
+export const BASE_URL = 'http://api.weatherapi.com/v1';
 
 // http://api.weatherapi.com/v1/current.json?q=London
 
@@ -20,5 +20,4 @@ const GET = (endpoint) =>
   );
 
 
-  
   export const API = { GET, ENDPOINTS };
